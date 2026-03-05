@@ -1,18 +1,21 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace RubixCube
 {
-    public abstract class Subcube
+    public class Subcube
     {
         //Subcube can either have 2 or 3 faces importantly, and there must only be 12 ones of 2 (for each vertex) and 8 ones of 3
-        Dictionary<Direction, char> faces = new Dictionary<Direction, char>();
-        public Subcube(char[] facesColours, int[][] facesDirections)//array of 3d vectors
+        public Dictionary<Direction, char> faces = new Dictionary<Direction, char>();
+        bool real;
+        public Subcube(Dictionary<Direction, char> faces)//array of 3d vectors
         {
-            for (int i = 0; i < facesColours.Length; i++)
-            {
-                Direction direction = new Direction(facesDirections[i]);
-                faces.Add(direction, facesColours[i]);
-            }
+            this.faces = faces;
         }
-        public virtual void TurnFaces(bool clockwise, Direction constantAxis)
+        public void AddFace(Direction direction, char colour)
+        {
+            faces.Add(direction, colour);
+        }
+        public void TurnFaces(bool clockwise, Direction constantAxis)
         {
             foreach (KeyValuePair<Direction, char> face in faces)//direction (key) of each face should be changed if it is not the constant
             {
@@ -25,6 +28,10 @@ namespace RubixCube
         public char colour(Direction direction)
         {
             return faces[direction];//return colour of face in that direction
+        }
+        public bool returnReal()
+        {
+            return real;
         }
 
     }

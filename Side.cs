@@ -7,14 +7,9 @@ namespace RubixCube
     {
         Direction direction;
         char colour;
-        Subcube[,] subcubes = new Subcube[3, 3];//but the middle value should always be nul
+        public Subcube[,] subcubes = new Subcube[3, 3];//but the middle value should always be nul
         public Side(int[] directionVector, char colour)
         {
-            foreach (Subcube subcube in subcubes)
-            // if it is a 
-            {
-                subcube.
-            }
             direction = new Direction(directionVector);
             this.colour = colour;
         }
@@ -30,6 +25,18 @@ namespace RubixCube
                         Console.WriteLine();                
                 }
             }
+        }
+        public void Turn(bool clockwise)
+        {
+            
+        }
+        public Direction returnDirection()
+        {
+            return direction;
+        }
+        public char returnColour()
+        {
+            return colour;
         }
     }
 }

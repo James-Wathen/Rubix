@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rubix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+565fe3390bd42662ef2996ca571ef3025d59d999")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rubix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rubix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

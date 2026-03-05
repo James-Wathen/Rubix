@@ -5,17 +5,17 @@ Initial thoughts:
 - Each side could be identified by the constant subcube, the other subcubes either have 2 or 3 faces. The specific face of that subcube would need to be stored to that side as well.
 - This method could allow me to make it so that when one side turns it moves a subcube, and any sides with that subcube would also change the faces they have. (Making a total of 22 subcubes).
 
-[x] Assigning subcubes:
+- [x] Assigning subcubes:
 - Each side has an array of subcubes, but they are all shared between at least 2 of these arrays and the 1,1 (middle) subcube in a side's array must always be nul until after the side is filled up.
 - For one side, loop through each row in that side, for each element in that row check if the list of all subcubes contains a subcube that is adjacent then don't make a new subcube. 
     - In this case make the subcube that is found contain a new face of colour and direction of the original side we are looping through and add that subcube to the correct location in the original side. Which is already the location we are looking at
 - If there is no adjacent subcube then a new one is made that has one face that is in the direction and colour of the side it is made in
 - But if the spot that is being looked at is the middle it is skipped.
 
-[] Check for and returning adjacent subcube(s):
+- [] Check for and returning adjacent subcube(s):
     - If it is a corner item, i.e. both indeces of the side location are equal or are 0 and 2, then it should look for two adjacent points in two sides
 
-[] Where to put subcube:
+- [] Where to put subcube:
 This is decided in Turn in Rubix and takes a direction (of the side that is turned) and the rotation boolean.
 - 
 

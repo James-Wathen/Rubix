@@ -1,0 +1,15 @@
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.AssemblyInfoInputs.cache
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.AssemblyInfo.cs
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.csproj.CoreCompileInputs.cache
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.sourcelink.json
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\bin\Debug\net10.0\Rubix.exe
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\bin\Debug\net10.0\Rubix.deps.json
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\bin\Debug\net10.0\Rubix.runtimeconfig.json
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\bin\Debug\net10.0\Rubix.dll
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\bin\Debug\net10.0\Rubix.pdb
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.dll
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\refint\Rubix.dll
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.pdb
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\Rubix.genruntimeconfig.cache
+C:\Users\jmaes\OneDrive\Documents\VSCode\C# fun\Rubix\obj\Debug\net10.0\ref\Rubix.dll

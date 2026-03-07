@@ -12,12 +12,32 @@ Initial thoughts:
 - If there is no adjacent subcube then a new one is made that has one face that is in the direction and colour of the side it is made in
 - But if the spot that is being looked at is the middle it is skipped.
 
-- [] Check for and returning adjacent subcube(s):
-    - If it is a corner item, i.e. both indeces of the side location are equal or are 0 and 2, then it should look for two adjacent points in two sides
+- [ ] Check for and returning adjacent subcube(s):
+    If it is a corner item, i.e. both indeces of the side location are equal or are 0 and 2, then it should look for two adjacent points in two sides
+    adjacentDirection():
+    - Up for each side's array will just be the same operation on the direction vector of the face we are looking at.
+    - Left will be defined by side direction cross product with the upwards, then down and right are the respective negatives.
 
-- [] Where to put subcube:
+    Location of subcube in originalSide -> orientation(s) -> adjacentDirection -> secondSide. Search through secondSide.adjacentDirection for the orientation that originalSide is in.
+    We can store the orientation(s) as a char[], then a function can take this array and cycle through each char, in each cycle it finds the direction of that orientation and does the whole search from that side.
+    
+    adjacentOrientation should take the index and find the 1 or 2 orientations it is in as chars.
+    - index shows the row and column, if one of them == 1, then we just look at the other
+    - If neither one is == 1 then we look at both orientations
+
+    - Now, for looking at an item in the array we know which row or column it is in. Each column/row correlates to the direction of the adjacent side in a dictionary called adjacentDirection.
+    - Looking at the adjacent direction for a particular row for example, we may see that direction's side and therefore its adjacentDirection dictionary
+    - Therefore we may look up which row/column of the adjacent side faces our original side, so that we now know which row/column in the adjacent side is adjacent to the original side.
+
+    - [ ] how to find which position of the adjacent row/column the adjacent face would be in. This theoretically requires the index of the item, direction facing towards the adjacent side, and the versa.
+
+    - I need some kind of translation for this direction and 
+
+- [ ] Where to put subcube:
 This is decided in Turn in Rubix and takes a direction (of the side that is turned) and the rotation boolean.
-- 
+- Using the 
+
+- [ ] printing should depend on orientation of each array
 
 Turn of a side:
 - So Turn will act on a side, depend on clock or anti, affect every subcube in that side:

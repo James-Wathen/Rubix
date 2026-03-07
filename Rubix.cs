@@ -65,7 +65,7 @@ namespace RubixCube
         static void checkLocation(Side side, int i, int j, Subcube[] subcubes, int noSubCubes)
         {
             int[] location = {i, j};
-            if (!Adjacent(side, location).returnReal())//no adjacent face so no adjacent subcube
+            if (!side.Adjacent(location).returnReal())//no adjacent face so no adjacent subcube
             {
                 Dictionary<Direction, char> faces = new Dictionary<Direction, char>();
                 faces.Add(side.returnDirection(), side.returnColour());
@@ -75,16 +75,14 @@ namespace RubixCube
             }
             else//there is an adjacent subcube
             {
-                Adjacent(side, location).AddFace(side.returnDirection(), side.returnColour());//modify the adjacent subcube
-                side.subcubes[i, j] = Adjacent(side, location);//add that subcube to this side
+                side.Adjacent(location).AddFace(side.returnDirection(), side.returnColour());//modify the adjacent subcube
+                side.subcubes[i, j] = side.Adjacent(location);//add that subcube to this side
             }
         }
-        static Subcube Adjacent(Side side, int[] location)//checks if there is a subcube in adjacent to the location in the side
-        {
-            
-        }
+
         static void printCube(Side[] printedCube)
         {
+            //nead to implement some kind of orientation dependence
             foreach (Side side in printedCube)
             {
                 side.print();
